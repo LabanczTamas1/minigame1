@@ -1,0 +1,134 @@
+*{
+    background-color: #42b883;
+    cursor: none;
+}
+
+.rect{
+    width: 10%;
+    height:5vh;
+    background-color: blanchedalmond;
+    position: absolute;
+    filter: blur(8px);
+        -webkit-filter: blur(8px);
+
+        animation-name: exampleback;
+            animation-duration: 0.8s;
+}
+
+.rect:nth-child(1){
+    width: 105px;
+    height:60px;
+    top:5%;
+    left:15%;
+    background-color: #ff7e67;
+}   
+
+.rect:nth-child(2) {
+    width: 165px;
+    height: 125px;
+    top: 20%;
+    right: 65%;
+    background-color: #ff7e67;
+}
+
+.rect:nth-child(3) {
+    width: 165px;
+    height: 125px;
+    top: 70%;
+    right: 65%;
+    background-color: #ff7e67;
+}
+
+.rect:nth-child(3):hover {
+    width: 165px;
+    height: 125px;
+    top: 70%;
+    right: 65%;
+    background-color: #ff7e67;
+    filter: blur(0px);
+        -webkit-filter: blur(0px);
+        animation-name: example;
+            animation-duration: 0.5s;
+}
+
+@keyframes example {
+    0% {
+        filter: blur(8px);
+            -webkit-filter: blur(8px);
+    }
+
+
+    100% {
+        filter: blur(0px);
+            -webkit-filter: blur(0px);
+    }
+}
+
+@keyframes exampleback {
+    0% {
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+    }
+
+
+    100% {
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+    }
+}
+
+.rect:nth-child(4) {
+    width: 105px;
+    height: 65px;
+    top: 15%;
+    left: 25%;
+    background-color: #ff7e67;
+}
+
+.rect:nth-child(5) {
+    width: 165px;
+    height: 185px;
+    top: 15%;
+    left: 55%;
+    background-color: #ff7e67;
+}
+
+.rect:nth-child(6) {
+    width: 165px;
+    height: 125px;
+    top: 50%;
+    right: 15%;
+    background-color: #ff7e67;
+}
+
+.rect:nth-child(7) {
+    width: 265px;
+    height: 180px;
+    top: 43%;
+    right: 70%;
+    background-color: #ff7e67;
+}
+
+.rect:nth-child(9) {
+    width: 105px;
+    height: 160px;
+    top: 5%;
+    left: 55%;
+    background-color: #ff7e67;
+}
+
+#gallery{
+    height: 140vmax;
+        width: 140vmax;
+        position: absolute;
+    margin: 50px;
+}
+
+#flashlight{
+    width:200px;
+    height:200px;
+    border:rgba(0, 0, 0, 1) solid 4000px;
+    border-radius: 100%;    
+    background: rgba(0, 0, 0, 0.7);
+    pointer-events: none;
+}
